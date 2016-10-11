@@ -9,5 +9,6 @@ package com.example.master.newapp.constant;
  */
 public class SpKey {
     public static final String MAIN_ISFIRST="main_isFirst";
+    public static final String WELCOME_ISFIRST="welcome_isFirst";
 
 }

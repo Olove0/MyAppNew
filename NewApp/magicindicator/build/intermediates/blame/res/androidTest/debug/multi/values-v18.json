@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v18\\values-v18.xml",
+        "outputFile": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v18\\values-v18.xml",
         "map": [
             {
                 "to": {

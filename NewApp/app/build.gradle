@@ -39,4 +39,5 @@ dependencies {
     compile 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.orhanobut:logger:1.15'
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile project(':magicindicator')
 }

@@ -21,7 +21,8 @@ public abstract class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mRootView = initView(inflater,container);
+//        mRootView = initView(inflater,container);
+        mRootView=LayoutInflater.from(getActivity()).inflate(getLayoutResId(),container,false);
         ButterKnife.bind(this, mRootView);//绑定到butterknife
         return mRootView;
     }
@@ -34,7 +35,7 @@ public abstract class BaseFragment extends Fragment {
         initData();
     }
 
-    protected abstract View initView(LayoutInflater inflater,ViewGroup container);
+    protected abstract int getLayoutResId();
     protected abstract void initListener();
     protected abstract void initData();
     /**

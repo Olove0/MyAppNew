@@ -9,9 +9,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.master.newapp.MyApplication;
+import com.example.master.newapp.R;
 
 import butterknife.ButterKnife;
 import utils.SharedPreferencesUtil;
@@ -20,10 +24,9 @@ import utils.SharedPreferencesUtil;
  * ltx
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 	protected Context mContext;
 	private SharedPreferencesUtil spUtil;
-	private final static String SP_NAME="my_app";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +34,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);// 锁定竖屏
 		mContext = getActivityContext();
 		setContentView(getLayoutResId());
-		onFirst();
 		ButterKnife.bind(this);
-		initdata();
+		onFirst();
+		initView();
+		setListener();
+		processLogic();//网络请求
 		MyApplication.getInstance().addActivity(this);
 	}
 
@@ -60,10 +65,6 @@ public abstract class BaseActivity extends AppCompatActivity {
 		return isFirst;
 	}
 
-	private void initdata(){
-		setListener();
-		processLogic();//网络请求
-	}
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
@@ -91,6 +92,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 	 * 设置各种事件的监听器
 	 */
 	protected abstract void setListener();
+
+	/**
+	 * 初始化控件
+	 */
+	protected abstract void initView();
 
 	/**
 	 * 业务逻辑处理，主要与后端交互
@@ -193,5 +199,32 @@ public abstract class BaseActivity extends AppCompatActivity {
 			e.printStackTrace();
 		}
 		return "1.0";
+	}
+
+	/**
+	 * 设置标题
+	 * @param title 标题
+     */
+	public void setTitle(String title){
+		TextView mTitleView= (TextView) findViewById(R.id.tv_title);
+		mTitleView.setText(title);
+	}
+
+	/**
+	 * 返回键
+	 */
+
+	public void setBack(){
+		ImageView mBack= (ImageView) findViewById(R.id.iv_back);
+		mBack.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()){
+			case R.id.iv_back:
+				finish();
+				break;
+		}
 	}
 }

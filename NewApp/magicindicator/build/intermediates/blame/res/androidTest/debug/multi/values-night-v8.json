@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-night-v8\\values-night-v8.xml",
+        "outputFile": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
         "map": [
             {
                 "to": {

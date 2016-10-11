@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/fl_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:background="@android:color/holo_green_light">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/RadioButtonBottomTab"
+            android:drawableTop="@drawable/tab_0_back"
+            android:text="@string/str_main"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_home1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/_1"
+            style="@style/RadioButtonBottomTab"
+            android:drawableTop="@drawable/tab_1_back"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rb_search"
+            android:layout_width="0dp"
+            android:text="@string/str_search"
+            android:layout_height="match_parent"
+            style="@style/RadioButtonBottomTab"
+            android:drawableTop="@drawable/tab_2_back"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_my"
+            style="@style/RadioButtonBottomTab"
+            android:drawableTop="@drawable/tab_3_back"
+            android:layout_weight="1"/>
+    </RadioGroup>
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+</LinearLayout>
