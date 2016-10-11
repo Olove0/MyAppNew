@@ -1,6 +1,7 @@
 package Base;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import utils.SharedPreferencesUtil;
 
 /**
@@ -18,12 +20,13 @@ public abstract class BaseFragment extends Fragment {
 
     private View mRootView;
     private SharedPreferencesUtil spUtil;
+    private Unbinder mUnbinder;//butterknife
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        mRootView = initView(inflater,container);
         mRootView=LayoutInflater.from(getActivity()).inflate(getLayoutResId(),container,false);
-        ButterKnife.bind(this, mRootView);//绑定到butterknife
+       mUnbinder= ButterKnife.bind(this, mRootView);//绑定到butterknife
         return mRootView;
     }
 
@@ -34,7 +37,7 @@ public abstract class BaseFragment extends Fragment {
         initListener();
         initData();
     }
-
+    /*********************子类实现*****************************/
     protected abstract int getLayoutResId();
     protected abstract void initListener();
     protected abstract void initData();
@@ -59,5 +62,27 @@ public abstract class BaseFragment extends Fragment {
             spUtil.putBooleanValue(simpleName, false);
         }
         return isFirst;
+    }
+    /**
+     * 通过Class跳转界面
+     **/
+    public void startActivity(Class<?> cls) {
+        startActivity(cls, null);
+    }
+    /**
+     * 含有Bundle通过Class跳转界面
+     **/
+    public void startActivity(Class<?> cls, Bundle bundle) {
+        Intent intent = new Intent();
+        intent.setClass(getContext(), cls);
+        if (bundle != null) {
+            intent.putExtras(bundle);
+        }
+        startActivity(intent);
+    }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mUnbinder.unbind();
     }
 }

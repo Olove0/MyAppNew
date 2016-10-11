@@ -18,6 +18,7 @@ import com.example.master.newapp.MyApplication;
 import com.example.master.newapp.R;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import utils.SharedPreferencesUtil;
 
 /**
@@ -27,6 +28,7 @@ import utils.SharedPreferencesUtil;
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 	protected Context mContext;
 	private SharedPreferencesUtil spUtil;
+	private Unbinder unbinder;//饭注销
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);// 锁定竖屏
 		mContext = getActivityContext();
 		setContentView(getLayoutResId());
-		ButterKnife.bind(this);
+		unbinder= ButterKnife.bind(this);
 		onFirst();
 		initView();
 		setListener();
@@ -82,6 +84,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 		// TODO Auto-generated method stub
 		super.onDestroy();
 		MyApplication.getInstance().finishActivity(this);
+		unbinder.unbind();
 	}
 	/**
 	 * 加载页面layout
