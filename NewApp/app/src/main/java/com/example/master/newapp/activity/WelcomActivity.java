@@ -131,4 +131,8 @@ public class WelcomActivity extends BaseActivity {
         ViewPagerHelper.bind(magicIndicator, mVpWelcome);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

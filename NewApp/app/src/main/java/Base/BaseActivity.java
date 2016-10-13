@@ -36,7 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);// 锁定竖屏
 		mContext = getActivityContext();
 		setContentView(getLayoutResId());
-		unbinder= ButterKnife.bind(this);
+		unbinder=ButterKnife.bind(this);
 		onFirst();
 		initView();
 		setListener();
@@ -86,20 +86,19 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 		MyApplication.getInstance().finishActivity(this);
 		unbinder.unbind();
 	}
+	/*********************子类实现*****************************/
 	/**
 	 * 加载页面layout
 	 */
 	protected abstract int getLayoutResId();
-
-	/**
-	 * 设置各种事件的监听器
-	 */
-	protected abstract void setListener();
-
 	/**
 	 * 初始化控件
 	 */
 	protected abstract void initView();
+	/**
+	 * 设置各种事件的监听器
+	 */
+	protected abstract void setListener();
 
 	/**
 	 * 业务逻辑处理，主要与后端交互

@@ -53,7 +53,6 @@ public class ScreenUtil {
     /**
      * dip转px
      *
-     * @param context
      * @param dipValue
      * @return
      */

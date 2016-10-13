@@ -10,6 +10,7 @@
         android:textColor="@android:color/black"
         android:gravity="center"/>
     <ImageView
+        android:id="@+id/iv_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/load_error"

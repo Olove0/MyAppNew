@@ -8,4 +8,6 @@
     <string name="str_search">搜索</string>
     <string name="str_my">我的</string>
     <string name="str_recommend">推荐</string>
+    <string name="str_mine_detail">详情页</string>
+    <string name="str_mine_detail_title">我的详情页</string>
 </resources>
