@@ -1,3 +1,4 @@
+/*
 package http;
 
 
@@ -9,9 +10,11 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 import rx.Observable;
 
+*/
 /**
  * Created by liukun on 16/3/9.
- */
+ *//*
+
 public interface MovieService {
 
 //    @GET("top250")
@@ -22,15 +25,26 @@ public interface MovieService {
 
 //    @GET("top250")
 //    Observable<HttpResult<List<Subject>>> getTopMovie(@Query("start") int start, @Query("count") int count);
-       /*test get*/
+       */
+/*test get*//*
+
     @GET("top250")
     Observable<HttpResult<List<Subject>>> getTopMovie(@Query("start") int start, @Query("count") int count);
-  /*test Post  @part*/
-  /*  @GET("top250")
-    Observable<HttpResult<List<Subject>>> getTopMovie(@Part("start") int start, @Part("count") int count);*/
-    /*test post @Field*/
-     /* @FormUrlEncoded
+  */
+/*test Post  @part*//*
+
+  */
+/*  @GET("top250")
+    Observable<HttpResult<List<Subject>>> getTopMovie(@Part("start") int start, @Part("count") int count);*//*
+
+    */
+/*test post @Field*//*
+
+     */
+/* @FormUrlEncoded
       @POST("top250")
-      Observable<HttpResult<List<Subject>>> getTopMovie(@Field("start") int start, @Field("count") int count);*/
+      Observable<HttpResult<List<Subject>>> getTopMovie(@Field("start") int start, @Field("count") int count);*//*
+
 
 }
+*/

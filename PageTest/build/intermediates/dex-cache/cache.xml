@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\PageTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\GitHub\PageTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_2204aad970c3c789834b46bc314dc6289975c876\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\PageTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fa590745b7d7d3d4e5d3bbfcb6d946949d4eaa18">
+        <dex dex="E:\GitHub\PageTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_80d24ca1f3641dbee33355aac0dd399b744cc6ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\PageTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\GitHub\PageTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_3678760e10e30919063336ae96ad3794691d79b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\PageTest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c2ed2c46a92fd14dff5fcc86b2b9965821a5ce72">
+        <dex dex="E:\GitHub\PageTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b42de4a80f9cb25b3a2fd474ef4ce9a188542e4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\PageTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="E:\GitHub\PageTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_d6d5a2dc7a83bf982ece0fb90dcce8c00a834183\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\AsSDK\android_sdk\android_sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="E:\GitHub\PageTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_770d964c314732b1cc23e6e1b105e0ce1b19a93e\classes.dex" />
+    </item>
+
+</items>

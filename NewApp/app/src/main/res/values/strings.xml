@@ -10,4 +10,7 @@
     <string name="str_recommend">推荐</string>
     <string name="str_mine_detail">详情页</string>
     <string name="str_mine_detail_title">我的详情页</string>
+    <string name="str_nest_1">嵌套1</string>
+    <string name="str_nest_2">嵌套2</string>
+    <string name="str_nest_3">嵌套3</string>
 </resources>

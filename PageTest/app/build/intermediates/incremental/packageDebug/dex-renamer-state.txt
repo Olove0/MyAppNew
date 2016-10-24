@@ -1,0 +1,7 @@
+#Wed Oct 19 17:21:36 CST 2016
+base.0=E\:\\GitHub\\PageTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_b42de4a80f9cb25b3a2fd474ef4ce9a188542e4e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\GitHub\\PageTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_80d24ca1f3641dbee33355aac0dd399b744cc6ba\\classes.dex
+base.1=E\:\\GitHub\\PageTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_80d24ca1f3641dbee33355aac0dd399b744cc6ba
+file.0=E\:\\GitHub\\PageTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_b42de4a80f9cb25b3a2fd474ef4ce9a188542e4e\\classes.dex

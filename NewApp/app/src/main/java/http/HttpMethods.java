@@ -1,3 +1,4 @@
+/*
 package http;
 
 
@@ -16,9 +17,11 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
+*/
 /**
  * Created by liukun on 16/3/9.
- */
+ *//*
+
 public class HttpMethods {
 
     public static final String BASE_URL = "https://api.douban.com/v2/movie/";
@@ -54,12 +57,14 @@ public class HttpMethods {
         return SingletonHolder.INSTANCE;
     }
 
-    /**
+    */
+/**
      * 用于获取豆瓣电影Top250的数据
      * @param subscriber  由调用者传过来的观察者对象
      * @param start 起始位置
      * @param count 获取长度
-     */
+     *//*
+
     public void getTopMovie(Subscriber<List<Subject>> subscriber, int start, int count){
 
 //        movieService.getTopMovie(start, count)
@@ -82,11 +87,13 @@ public class HttpMethods {
                 .subscribe(s);
     }
 
-    /**
+    */
+/**
      * 用来统一处理Http的resultCode,并将HttpResult的Data部分剥离出来返回给subscriber
      *
      * @param <T>   Subscriber真正需要的数据类型，也就是Data部分的数据类型
-     */
+     *//*
+
     private class HttpResultFunc<T> implements Func1<HttpResult<T>, T> {
 
         @Override
@@ -99,3 +106,4 @@ public class HttpMethods {
     }
 
 }
+*/

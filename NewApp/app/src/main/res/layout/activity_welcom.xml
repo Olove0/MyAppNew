@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.master.newapp.activity.WelcomActivity">
+    tools:context="com.example.master.newapp.com.activity.WelcomActivity">
     <RelativeLayout
         android:id="@+id/rl_welcome"
         android:layout_width="match_parent"

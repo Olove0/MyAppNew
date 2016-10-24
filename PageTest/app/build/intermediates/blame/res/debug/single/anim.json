@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_in.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_bottom_in.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_in_from_top.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\dcloud_slide_in_from_top.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_out.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_right_out.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_buttom_in.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_buttom_in.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_out_to_top.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\dcloud_slide_out_to_top.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_out.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_left_in.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in_1.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_left_in_1.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_out.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out_1.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_left_out_1.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\loading_animation.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\loading_animation.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_buttom_out.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_buttom_out.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cycle.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\cycle.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\record_animation.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\record_animation.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_in.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_up_in.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\rotate.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\rotate.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_left_out.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cart_anim.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\cart_anim.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\PageTest\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_in.xml",
+        "source": "E:\\GitHub\\PageTest\\app\\src\\main\\res\\anim\\push_right_in.xml"
+    }
+]

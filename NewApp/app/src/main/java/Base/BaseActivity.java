@@ -1,6 +1,8 @@
 package Base;
 
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -14,8 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.master.newapp.MyApplication;
-import com.example.master.newapp.R;
+import com.MyApplication;
+import com.R;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -25,10 +27,13 @@ import utils.SharedPreferencesUtil;
  * ltx
  */
 
-public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
+public abstract class BaseActivity extends AppCompatActivity{
 	protected Context mContext;
 	private SharedPreferencesUtil spUtil;
 	private Unbinder unbinder;//饭注销
+
+	public ImageView mIvRight;
+	protected ProgressDialog progressDialog; // 数据加载进度条
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +90,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 		super.onDestroy();
 		MyApplication.getInstance().finishActivity(this);
 		unbinder.unbind();
+		unRegist();
 	}
 	/*********************子类实现*****************************/
 	/**
@@ -110,6 +116,12 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 	 * Activity.this
 	 */
 	protected abstract Context getActivityContext();
+	/**
+	 * 需要注销的事件
+	 */
+	protected void unRegist(){
+
+	}
 
 	/**
 	 * 弹出Toast
@@ -218,15 +230,69 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
 	public void setBack(){
 		ImageView mBack= (ImageView) findViewById(R.id.iv_back);
-		mBack.setOnClickListener(this);
+		mBack.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
 	}
 
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()){
-			case R.id.iv_back:
-				finish();
-				break;
+	/**
+	 * 右边的按钮
+	 * 默认隐藏
+	 * @param resId 资源Id
+     */
+	public void setRightBtn(int resId){
+		mIvRight = (ImageView) findViewById(R.id.iv_img_right);
+		mIvRight.setVisibility(View.VISIBLE);
+		mIvRight.setImageResource(resId);
+	}
+	/**
+	 * 显示自定义信息进度条
+	 *
+	 * @param message 要显示的信息内容
+	 */
+	public void showProgressDialog(String message) {
+		if (progressDialog == null) {
+			createProgressDialog();
+		}
+		progressDialog.setMessage(message);
+		if (!this.isFinishing() && !progressDialog.isShowing()) {
+			progressDialog.show();
 		}
 	}
+
+	/**
+	 * 显示数据加载对话框
+	 */
+	public void showLoadingDialog() {
+		showProgressDialog("正在加载，请稍等...");
+	}
+
+	/**
+	 * 创建进度条
+	 */
+	protected void createProgressDialog() {
+		progressDialog = new ProgressDialog(this);
+		progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+		progressDialog.setMessage("正在加载，请稍等...");
+		progressDialog.setCancelable(true);
+
+		progressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+			public void onCancel(DialogInterface dialog) {
+			}
+		});
+	}
+
+	/**
+	 * 取消菊花
+	 */
+
+	public void dismissProgressDialog() {
+		if (progressDialog != null) {
+			progressDialog.dismiss();
+		}
+	}
+
 }

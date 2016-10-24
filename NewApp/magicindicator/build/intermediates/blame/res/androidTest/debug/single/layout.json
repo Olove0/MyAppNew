@@ -72,16 +72,16 @@
         "source": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines.xml",
+        "source": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_lines.xml"
+    },
+    {
         "merged": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines.xml",
-        "source": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "E:\\demo\\MVPCommon-master\\NewApp\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
